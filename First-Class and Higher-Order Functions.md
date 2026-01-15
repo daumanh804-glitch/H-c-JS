@@ -68,7 +68,7 @@ Nó giống như một cái máy sinh ra các hàm con khác nhau tùy theo cài
 
 Tại sao dùng? Để tạo ra các hàm chuyên biệt từ một hàm tổng quát (liên quan đến Closure).
 Ví dụ:
-```
+```javascript
 // Hàm bậc cao (Trả về một hàm mới)
 function taoHamChao(loiChao) {
     return function(ten) {
@@ -91,5 +91,6 @@ Giải thích: taoHamChao là Hàm bậc cao vì nó đẻ ra hàm chaoKieuAnh v
 Là gì?	|Là khả năng của ngôn ngữ JS.	|Là cách dùng hàm trong thực tế.
 Tư duy	|"Hàm là dữ liệu" (Function is Value).|	"Hàm xử lý hàm" (Function on Function).
 Vai trò	|Nền tảng lý thuyết.	|Ứng dụng thực tế (Callback, Array Methods, v.v.).
+
 
 
