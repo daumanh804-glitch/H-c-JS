@@ -60,7 +60,7 @@ const tru = (x, y) => x - y;
 // Sử dụng
 mayTinh(5, 3, cong); // Kết quả: 8
 mayTinh(5, 3, tru);  // Kết quả: 2
-
+```
 Giải thích: mayTinh là Hàm bậc cao vì nó nhận hàm cong hoặc tru để xử lý.
 
 B. Trả về một hàm khác làm đầu ra (Output)
@@ -68,6 +68,7 @@ Nó giống như một cái máy sinh ra các hàm con khác nhau tùy theo cài
 
 Tại sao dùng? Để tạo ra các hàm chuyên biệt từ một hàm tổng quát (liên quan đến Closure).
 Ví dụ:
+```
 // Hàm bậc cao (Trả về một hàm mới)
 function taoHamChao(loiChao) {
     return function(ten) {
@@ -82,6 +83,7 @@ const chaoKieuViet = taoHamChao('Xin chào');
 // Sử dụng hàm con
 chaoKieuAnh('John'); // In ra: Hello, John!
 chaoKieuViet('Tèo'); // In ra: Xin chào, Tèo!
+```
 Giải thích: taoHamChao là Hàm bậc cao vì nó đẻ ra hàm chaoKieuAnh và chaoKieuViet.
 
 🧠 Bảng so sánh chốt hạ
@@ -89,4 +91,5 @@ Giải thích: taoHamChao là Hàm bậc cao vì nó đẻ ra hàm chaoKieuAnh v
 Là gì?	|Là khả năng của ngôn ngữ JS.	|Là cách dùng hàm trong thực tế.
 Tư duy	|"Hàm là dữ liệu" (Function is Value).|	"Hàm xử lý hàm" (Function on Function).
 Vai trò	|Nền tảng lý thuyết.	|Ứng dụng thực tế (Callback, Array Methods, v.v.).
-```
+
+
